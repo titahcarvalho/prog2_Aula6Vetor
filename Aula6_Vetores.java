@@ -1,6 +1,6 @@
 package prog2_aula6;
 import java.util.Scanner;
-
+import java.util.Arrays;
 public class Aula6_Vetores {
 
 	public static void main(String[] args) {
@@ -10,12 +10,19 @@ public class Aula6_Vetores {
 			System.out.println("Digite 10 número inteiros:");
 			vetor[i] = entrada.nextInt();			
 		}
-			System.out.println("Ao contrário:");
-		for (int i = 9; i >= 0; i--) {
-			System.out.print(" " + vetor[i]);
+			System.out.println("Na ordem crescente:");
+		//for (int i = 9; i >= 0; i--) {
+		//	System.out.print(" " + vetor[i]);
+			Arrays.sort(vetor);
+			System.out.println(Arrays.toString(vetor));
+			
+			entrada.close();
 		}
 			
-		}
-
 	}
+
+
+		
+		
+
 
