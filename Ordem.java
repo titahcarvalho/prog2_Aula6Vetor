@@ -13,7 +13,7 @@ public class Ordem {
 		this.vetor = vetor;
 	}
 	public void inverter() {
-		for( int j = 9; j > 0; j--) {
+		for( int j = 9; j >= 0; j--) {
 			System.out.println(this.vetor[j]);
 		} 
 	}
